@@ -16723,3 +16723,171 @@ Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-02 14:51:34 -0800
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-02 14:51:34 -0800
+
+
+Started GET "/boxfile/index" for 127.0.0.1 at 2014-12-02 15:39:00 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BoxfileController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered boxfile/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 7780ms (Views: 292.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-12-02 15:39:08 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-02 15:39:08 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-12-02 15:39:08 -0800
+
+
+Started GET "/assets/boxfile.css?body=1" for 127.0.0.1 at 2014-12-02 15:39:08 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-02 15:39:08 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-02 15:39:08 -0800
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-02 15:39:08 -0800
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-02 15:39:08 -0800
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-02 15:39:08 -0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-02 15:39:08 -0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-02 15:39:08 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-02 15:39:08 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-02 15:39:08 -0800
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-02 15:39:08 -0800
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-02 15:39:08 -0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-02 15:39:08 -0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-02 15:39:08 -0800
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-02 15:39:08 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-02 15:39:08 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-02 15:39:08 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-02 15:39:08 -0800
+
+
+Started GET "/assets/boxfile.js?body=1" for 127.0.0.1 at 2014-12-02 15:39:08 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-02 15:39:08 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-02 15:39:08 -0800
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-12-02 15:39:15 -0800
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"5PFFcOvMPL7D6KTh63uZfNVTsCYeN8h1tFElEBIwb9E="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-02 15:39:15 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 165ms (Views: 155.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-12-02 15:39:15 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-02 15:39:15 -0800
+
+
+Started GET "/assets/boxfile.css?body=1" for 127.0.0.1 at 2014-12-02 15:39:15 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-12-02 15:39:15 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-02 15:39:15 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-02 15:39:15 -0800
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-02 15:39:15 -0800
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-02 15:39:15 -0800
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-02 15:39:15 -0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-02 15:39:15 -0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-02 15:39:15 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-02 15:39:15 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-02 15:39:15 -0800
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-02 15:39:15 -0800
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-02 15:39:15 -0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-02 15:39:15 -0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-02 15:39:15 -0800
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-02 15:39:15 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-02 15:39:16 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-02 15:39:16 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-02 15:39:16 -0800
+
+
+Started GET "/assets/boxfile.js?body=1" for 127.0.0.1 at 2014-12-02 15:39:16 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-02 15:39:16 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-02 15:39:16 -0800
