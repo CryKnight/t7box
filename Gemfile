@@ -1,12 +1,13 @@
 source 'https://rubygems.org'
 
+ruby '1.9.3'
 gem 'devise'  
 gem "therubyracer"
 gem "less-rails"
 gem "twitter-bootstrap-rails"
 gem 'aws-s3', :require => 'aws/s3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.7'
+gem 'rails', '4.1.0'
 # Use sqlite3 as the database for Active Record
 group :development, :test do
     gem 'sqlite3'
