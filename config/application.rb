@@ -20,11 +20,10 @@ module T7box
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
     AWS::S3::DEFAULT_HOST.replace "s3-us-west-2.amazonaws.com"
+
     AWS::S3::Base.establish_connection!(  
-        #:access_key_id     => ENV['AWS_ACCESS_KEY_ID'],  
-        #:secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
-        :access_key_id     => 'AKIAIKGBUVCF6JDDGOBA',
+        :access_key_id     => 'AKIAIKGBUVCF6JDDGOBA',  
         :secret_access_key => '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'
-    )
+    ) 
   end
 end
