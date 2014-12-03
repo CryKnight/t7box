@@ -1,0 +1,5 @@
+<h2>Upload a new file:</h2>  
+<%= form_tag upload_path, :method => "post", :multipart => true do %>  
+    <p><%= file_field_tag "boxfile" %></p>  
+    <p><%= submit_tag "Upload" %></p>
+<% end %>  

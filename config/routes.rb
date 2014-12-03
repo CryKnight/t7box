@@ -1,11 +1,15 @@
-Rails.application.routes.draw do
-  #devise_for :users
-  devise_for :users 
+Sharebox::Application.routes.draw do
+
+  devise_for :users
+
   root :to => "home#index"
+
+
   match "/boxfile/index",   :as => "boxfile", :via => :get
   match "/boxfile/delete",  :as => "delete",  :via => [:get, :post]
   match "/boxfile/add",     :as => "add",     :via => :get
   match "/boxfile/upload", :as => "upload",  :via => :post
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -47,7 +51,7 @@ Rails.application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-
+  
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'

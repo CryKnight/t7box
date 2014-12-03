@@ -4,9 +4,9 @@ require 'rails/all'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
-Bundler.require(*Rails.groups)
+Bundler.require(:default, Rails.env)
 
-module T7box
+module Sharebox
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
@@ -19,11 +19,12 @@ module T7box
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+
     AWS::S3::DEFAULT_HOST.replace "s3-us-west-2.amazonaws.com"
 
     AWS::S3::Base.establish_connection!(  
         :access_key_id     => 'AKIAIKGBUVCF6JDDGOBA',  
         :secret_access_key => 'ni80Ib2OCt8CeqRw4JWW5S82Iovau3OBz5l22aV7'
-    ) 
+    )  
   end
 end
