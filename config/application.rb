@@ -20,8 +20,10 @@ module Sharebox
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
 
+    #make sure the Default host is right
     AWS::S3::DEFAULT_HOST.replace "s3-us-west-2.amazonaws.com"
-
+    # set up the access key id and secret access key
+    # use the environment varible
     AWS::S3::Base.establish_connection!(  
         :access_key_id     => ENV['AWS_ACCESS_KEY_ID'],  
         :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY'],
