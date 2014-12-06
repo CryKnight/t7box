@@ -9,7 +9,7 @@ gem 'aws-s3', :require => 'aws/s3'
 gem 'therubyracer'
 gem 'less-rails'
 gem 'twitter-bootstrap-rails'
-gem 'rails', '4.0.0'
+gem 'rails', '4.1.7'
 
 # Use sqlite3 as the database for Active Record
 ## for test
